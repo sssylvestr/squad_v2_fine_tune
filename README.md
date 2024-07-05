@@ -1,4 +1,4 @@
-# Fine tuning BERT-based models on SQuAD 2.0 dataset
+# Fine tuning Transformer models on SQuAD 2.0 dataset
 The objective of this project is to develop a question-answering (QA) system using Transformers for the Stanford Question Answering Dataset (SQuAD) 2.0. The project involved researching existing papers on the subject, pre-processing the SQuAD 2.0 dataset, fine-tuning several candidate(BERT, ALBERT, ROBERTA base versions) models on reduced dataset, and evaluating its accuracy.
 ## Papers
 * [Ensemble ALBERT on SQuAD 2.0](https://arxiv.org/abs/2110.09665) - comparative research on the performance of different ALBERT-based architectures on SQuAD 2.0 dataset from the creators of former 1 ranked model in the [leaderboard](https://paperswithcode.com/sota/question-answering-on-squad20);
