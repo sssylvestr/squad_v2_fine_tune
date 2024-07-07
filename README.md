@@ -10,3 +10,6 @@ The objective of this project is to develop a question-answering (QA) system usi
 ## Dataset
 [Stanford Question Answering Dataset](https://rajpurkar.github.io/SQuAD-explorer/) (SQuAD) is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage, or the question might be unanswerable.
 SQuAD2.0 combines the 100,000 questions in SQuAD1.1 with over 50,000 unanswerable questions written adversarially by crowdworkers to look similar to answerable ones. To do well on SQuAD2.0, systems must not only answer questions when possible, but also determine when no answer is supported by the paragraph and abstain from answering.
+## How to use the model?
+If you want to play around with the model you can access this [Streamlit App](https://sylvestr-squad.streamlit.app/).
+![The Image](https://github.com/sssylvestr/squad_v2_fine_tune/blob/main/streamlit_app.png?raw=true)
