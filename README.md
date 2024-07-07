@@ -13,3 +13,10 @@ SQuAD2.0 combines the 100,000 questions in SQuAD1.1 with over 50,000 unanswerabl
 ## How to use the model?
 If you want to play around with the model you can access this [Streamlit App](https://sylvestr-squad.streamlit.app/).
 ![The Image](https://github.com/sssylvestr/squad_v2_fine_tune/blob/main/streamlit_app.png?raw=true)
+## Further Thoughts
+If I was given more time for completing this task I would:
+* invest more time to hyperparameter tuning(especially dropout rate and batch size);
+* given having stronger compute I would try using larger versions of the models instead of base. As it is claimed in this [paper](https://arxiv.org/abs/2110.09665): using larger models with more parameters gives the most significant boost to ALBERT performance on SQuAD 2.0 dataset(they compared it to stacking more layers on top of (albert-base + extractive QA output layer) model). Presumably the same logic might apply to BERT and RoBERTa;
+* do some error analysis to see where the model fails and where it is strong. We could potentially identify some mislabeled examples and augment dataset based on our findings;
+* the top spots in [leaserboard](https://paperswithcode.com/sota/question-answering-on-squad20) belong to ensemble models, so this could also be a potential next step if we wanted to get a maximum score on this dataset;
+* it is also common for extractive QA models to struggle with abbreviations(E.g. we have a context with a full title of 'National Basketball Association' and we ask a question 'What is NBA?'). So we might want to augment our data in a way to improve model's performance on this type of situations.
